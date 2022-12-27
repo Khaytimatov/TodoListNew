@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: aqua;
+} */
+
+.container {
+    padding: 1em;
+    width: 100%;
+    
+}
+
+:root{
+    --primary-color: linear-gradient(135deg, #053FEA, #0BC9F7);
+    --secondary-color: linear-gradient(135deg, #E62B22, #eb5f22);
+    --accent-color: #0bc9f7;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    background: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0em; 
+}
+
+#todo form input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    color: #111;
+}
+
+#todo form input:focus{
+    outline: none;
+    border: 2px solid var(--accent-color);
+}
+
+#todo form button {
+    margin-top: 0.5em;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 2em;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+    padding: 1em;
+}
+
+.dltAll{
+    margin-bottom: 0.6em;
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.msgName{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 0.5em;
+    margin-bottom: 1em;
+    border-left: 4px solid var(--accent-color);
+    width: 100%;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.imageDlt, .imageEdt, .imageDn{
+    width: 60px;
+    height: 40px;
+    padding: 1em;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.imageDlt{
+    background: var(--secondary-color);
+}
+
+.imageEdt{
+    background: var(--accent-color);
+}
