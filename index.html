@@ -8,28 +8,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-    <section id="todo">
-        <div class="container">
-            <h1></h1>
-
-            <form>
-                <input type="text" placeholder="Task to be done...">
-                <button>Create Todo</button>
-            </form>
-            <button class="dltAll">Delete All</button>
-
-            <div id="output">
-
+    <div class="container">
+        <div id="addTask">
+            <div id="newTask">
+                <input type="text" id="userInput" placeholder="Task to be done...">
+                <input type="hidden" id="saveIndex">
+                <button id="push">Create Todo</button>
+                <button style="display:none;" id="save">Save Todo</button>
             </div>
-
         </div>
-    </section>
 
+        <div id="tasksList">
+            <div id="searchTask">
+                <div id="deleteAll">Delete All</div>
+                <input type="text" id="searchBar" placeholder="Search tasks...">
+            </div>
+            <div id="tasks">
+            </div>
+        </div>
+    </div>
 
+<div id="snackBar">Please Enter a Task</div>
     <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
